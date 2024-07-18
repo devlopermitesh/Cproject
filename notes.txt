@@ -327,3 +327,35 @@ break:
 The break statement is used to exit from the loop immediately, regardless of the loop's condition. It is often used to terminate a loop when a certain condition is met.
 continue:
 The continue statement is used to skip the rest of the code inside the current iteration of the loop and proceed to the next iteration.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//add needed dependency
+//create struck for multitype varible data store
+//create a data
+//fetch data variable from struck
+//make two empty array one for userinput character and other for 26 alphabets
+//make a loop for continue uptill guess correct or fail in limit tries
+//display guess word if present,draw first setup for look
+//take input from user in sutable form
+//check if guess word is already there
+//if not then set true in alphabets array
+//make a responsive logic for each move
+//if user guess correct congratu+set a new value in userinput array
+//else feed back
+//continue tries++
+compare secret word and userguess word is correct then congratualarion
+//if user cross the limit game over message
