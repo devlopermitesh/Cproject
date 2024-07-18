@@ -1,0 +1,329 @@
+what is programing??
+computer programing is a medium for us to communication with computer just like we use hindi or english to
+ communicate with each other programming is a way fr us to deliver our instruction to the computer
+
+
+ what is c?
+ c is programing language
+ c is one of oldest and first programing language
+ c was developed by dennis ritchie at At & T's bell labs USA in 1972
+
+ use of c?
+ c language is used to program a wide variety of system
+ some of the uses of c are as follows:
+1.Major parts of window ,linux,and other operating system are written in c
+2.C is used to write driver program for devices like tablets ,printer etc
+3.C language is used to program embedded system where program need to run faster in limited memory (microwave)
+
+
+chapter 1.variables ,constants and keywords
+variables:
+a variable is a container which stores a value 
+IN kitchen ,we have container storing rice ,dal,sugar etc similar to that variables in c (stores value of a constants)
+a=3//a is assigned 3 as same can assign float,int,storing
+
+rules for naming variable in C
+1.first character should be alphabates or underscore(_)
+2.no comma , blanks allow
+3.no special symbol
+4.case sensitive
+
+constant:
+constant is kind of varible with cant be change after once filled up
+
+type of constants:
+primarily ,there are three types of constant:
+1.interger constant:->-1,3,48,
+2.real constant->-322,2.7,7.0
+3.character constant->'a','@'must be enclosed in single inverted commas'
+
+keywords:some reserved word for whose meaning is already known to compiler ,there are 32 avaible in C
+auto	break	case	char
+const	continue	default	do
+double	else	enum	extern
+float	for	goto	if
+int	long	register	return
+short	signed	sizeof	static
+struct	switch	typedef	union
+unsigned	void	volatile	while
+
+structure of c program:
+Sections are mentioned below:
+
+Documentation
+Preprocessor Section
+Definition
+Global Declaration
+Main() Function
+Sub Programs
+
+1.Documentation:
+This section consists of the description of the program, the name of the program, and the creation date and time of the program.
+ It is specified at the start of the program in the form of comments. Documentation can be represented as
+
+2. Preprocessor Section
+All the header files of the program will be declared in the preprocessor section of the program. Header files help us to access
+ other’s improved code into our code. A copy of these multiple files is inserted into our program before the process of compilation. 
+Example:
+#include<stdio.h>
+#include<math.h>
+
+3. Definition:
+Preprocessors are the programs that process our source code before the process of compilation. There are multiple steps which are involved
+ in the writing and execution of the program. Preprocessor directives start with the ‘#’ symbol. The #define preprocessor is used to create
+  a constant throughout the program. Whenever this name is encountered by the compiler, it is replaced by the actual piece of defined code.
+  #define long long ll
+
+4. Global Declaration:
+The global declaration section contains global variables, function declaration, and static variables. Variables and functions which are declared
+ in this scope can be used anywhere in the program. 
+ int num = 18;
+
+5. Main() Function:
+Every C program must have a main function. The main() function of the program is written in this section. Operations like declaration and execution 
+are performed inside the curly braces of the main program. The return type of the main() function can be int as well as void too. void() main
+ tells the compiler that the program will not return any value. The int main() tells the compiler that the program will return an integer value.
+ void main()
+ int main()
+
+6. Sub Programs:
+User-defined functions are called in this section of the program. The control of the program is shifted to the called function whenever they are called 
+from the main or outside the main() function. These are specified as per the requirements of the programmer. 
+
+// Documentation 
+/**					 
+* file: sum.c 
+* author: you 
+* description: program to find sum. 
+*/
+
+// Link :Header file which is used for standard input-output. This is the preprocessor section.
+#include <stdio.h>	
+
+// Definition :This is the definition section. It allows the use of constant X in the code.
+#define X 20 
+
+// Global Declaration :This is the Global declaration section includes the function declaration that can be used anywhere in the program.
+int sum(int y); 
+
+// Main() Function :main() is the first function that is executed in the C program.
+int main(void)	 
+{ 
+int y = 55; 
+printf("Sum: %d", sum(y)); 
+//We have used int as the return type so we have to return 0 which states that the given
+// program is free from the error and it can be exited successfully.
+return 0; 
+} 
+
+// Subprogram 
+int sum(int y) 
+{ 
+return y + X; 
+}
+
+comments:
+comments are used to clarify somethig about the program in plain language it is a way for us to add notes to our program
+there are two types of comments in C
+single line comment://
+multiline comment:/**/
+
+
+
+Compilation and Execution:
+           -------------
+first.c ->| c compiler | return=> first.exe
+in  vscode ----gcc------ 
+
+a compiler is a computer program which convert a c program into machiner language so that  it can be 
+easily understand by its computer
+a c program is written in a plain text
+this plan text is combination of instruction in a particular sequnce .the compiler performs some basic
+checks and finally convert the program into an executed
+
+
+library function(inbuilt function ):
+c language has a lot of valuable library function which is used to carry out certain task for instance
+printf function is used to print value on screen
+printf('this is %d')
+formate speciafier in c :
+format specifiers are used in functions like printf and scanf to specify the type of data to be printed or 
+read. Here are some common format specifiers
+
+%d for interger
+%f for real value(8.5)
+%c for character
+we will cover a detail topic on that in next chapters
+
+note::-always remember use string in c is character array so to store a string in a variable syntx should be like
+char name[]="yourname"
+
+
+take input from  user:
+To take input from a user in C, you generally use the scanf function. This function reads formatted input from the 
+standard input (keyboard) and stores it in the provided variable(s)
+example :
+    int a;
+        printf("Enter an integer: ");
+    scanf("%d", &a); // Reads an integer and stores it in the variable 'a'
+        printf("Integer: %d\n", a);
+
+
+chapter 2.instruction and Operations
+instruction :is a set of instruction just like a recepie -which contains instruction to prepair a perticular disk
+
+type of  instruction:
+Declaration instructio(variable declaration)
+arithmetic instruction(calculations)
+control instruction(flow control)
+Input/Output Instructions (Data Input aur Output)
+
+Type Declaration Instructions (Variable Declaration)
+int a; // Yeh declare karta hai ek integer variable 'a'
+float b; // Yeh declare karta hai ek float variable 'b'
+char c; // Yeh declare karta hai ek character variable 'c'
+
+ Arithmetic Instructions (Calculations)
+ int a = 5, b = 10;
+int sum = a + b; // Addition
+int difference = b - a; // Subtraction
+int product = a * b; // Multiplication
+int quotient = b / a; // Division
+
+Control Instructions (Flow Control):
+determine the flow of control in a program four type of control instruction in c are:
+1,.sequence control instruction
+2.decisions control instruction
+3.loop control instruction
+4.case control instruction
+example::
+int a = 10;
+if (a > 0) {
+    printf("a is positive\n");
+} else {
+    printf("a is negative or zero\n");
+}
+
+input output Instructions
+int a;
+printf("Enter an integer: ");
+scanf("%d", &a); // Yeh user se ek integer input lega aur 'a' me store karega
+printf("You entered: %d\n", a); // Yeh user dwara enter kiya gaya integer print karega
+
+
+operators in C:
+In C programming, operators are symbols that represent computations, operations, or comparisons
+on variables or values. These operators allow you to manipulate data and control the flow of execution in your program
+
+ Arithmetic Operators
+Arithmetic operators perform basic mathematical operations like addition, subtraction, multiplication, division, and modulus (remainder).
+Addition (+),Subtraction (-),Multiplication (*),Division (/),Modulus (%)
+
+ Relational Operators:
+ Relational operators are used to compare two values. They return either 1 (true) or 0 (false).
+ Equal to (==),,Not equal to (!=),,Greater than (>),Less than (<),Greater than or equal to (>=),Less than or equal to (<=)
+
+  Logical Operators:
+Logical operators perform logical AND (&&), logical OR (||), and logical NOT (!) operations. They are used to combine multiple conditions.
+Logical AND (&&): Returns true if both operands are true.
+Logical OR (||): Returns true if at least one operand is true.
+Logical NOT (!): Reverses the logical state of its operand.
+
+Increment and Decrement Operators:
+Increment (++) and decrement (--) operators are used to increase or decrease the value of a variable by 1.
+
+Bitwise Operators
+Bitwise operators perform operations at the bit-level of variables.
+Bitwise AND (&): Performs bitwise AND between corresponding bits of two operands.
+Bitwise OR (|): Performs bitwise OR between corresponding bits of two operands.
+Bitwise XOR (^): Performs bitwise XOR (exclusive OR) between corresponding bits of two operands.
+Bitwise NOT (~): Inverts all the bits of its operand.
+Left Shift (<<): Shifts bits of the left operand to the left by the number of positions specified by the right operand.
+Right Shift (>>): Shifts bits of the left operand to the right by the number of positions specified by the right operand.
+
+
+type of conversion in Arithmetic operation:
+int and int ->int 
+int and float ->float
+float and float ->float 
+
+operator precedure in c?
+Operator precedence in C determines the order in which operators are evaluated when an expression has multiple operators. It's important
+to understand operator precedence to avoid ambiguity and ensure that expressions are evaluated correctly. Operators with higher precedence 
+are evaluated before operators with lower precedence
+precedure priority order
+()>++, -->(), [],
+
+operators associativity:Operators associativity determines the order in which operators of the same precedence are evaluated in an expression. 
+There are two main types of associativity:
+Left Associativity:
+In expressions with left-associative operators, operations are evaluated from left to right. This means that if there are multiple operators of 
+the same precedence level, the one on the left side will be evaluated first.
+Addition (+), subtraction (-), multiplication (*), and division (/) are typically left-associative.
+
+Right Associativity:
+In expressions with right-associative operators, operations are evaluated from right to left. This means that the operator on the right side gets
+evaluated first.
+Assignment (=), exponentiation (**) are right-associative.
+
+
+chapter 3.condition in c:
+in C programming, they typically refer to using conditional statements to control the flow of execution based on certain conditions. Here are the main
+ types of conditional statements you can use in 
+if Statement:
+The if statement executes a block of code if a specified condition is true.
+else-if Statement:
+The else-if statement allows you to check multiple conditions sequentially.
+
+if (condition1) {
+    // code to be executed if condition1 is true
+} else if (condition2) {
+    // code to be executed if condition2 is true
+} else {
+    // code to be executed if all conditions are false
+}
+
+
+condition operator::
+in C, the conditional operator (also known as the ternary operator) ? : is a shorthand way to write an if-else statement. It's often used for simple
+ conditional assignments. Here's how it works and its syntax:
+condition ? expression1 : expression2;
+
+
+switch Statement:
+The switch statement evaluates an expression against multiple possible cases and executes the code associated with the first matching case. It is useful 
+when you have a series of conditions to check against the same variable.
+switch (expression) {
+    case constant1:
+        // code to be executed if expression == constant1
+        break;
+    case constant2:
+        // code to be executed if expression == constant2
+        break;
+    default:
+        // code to be executed if expression doesn't match any case
+}
+
+
+chapter 4.loops in C:
+Loops are used in programming to repeat a block of code as long as a specified condition is met. In C, there are three main types of loops:
+for loop
+while loop
+do-while loop
+
+
+
+for loop:
+The for loop is used when the number of iterations is known beforehand. It consists of three parts: initialization, condition, and increment/decrement.
+while loop:
+The while loop repeats a block of code as long as the specified condition is true. It is used when the number of iterations is not known beforehan
+do-while loop:
+The do-while loop is similar to the while loop, but it guarantees that the code block will be executed at least once since the condition is checked after the loop's body
+
+
+Control Instructions in Loops:
+Control instructions can change the flow of execution within loops. The primary control instructions used in loops are:
+break:
+The break statement is used to exit from the loop immediately, regardless of the loop's condition. It is often used to terminate a loop when a certain condition is met.
+continue:
+The continue statement is used to skip the rest of the code inside the current iteration of the loop and proceed to the next iteration.
